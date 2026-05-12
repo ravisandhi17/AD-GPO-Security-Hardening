@@ -1,19 +1,17 @@
-Active Directory Group Policy Security Hardening Project
+**Active Directory Group Policy Security Hardening Project**
+
+**Project Title**
+
+**AD-GPO-Security-Hardening**
 
 
-📌 Project Title
-
-
-AD-GPO-Security-Hardening
-
-
-🧠 Overview
+ **Overview**
 
 
 This project demonstrates enterprise-level Active Directory security hardening using Group Policy Objects (GPOs) in a Windows Server environment. The goal is to enforce security controls across domain-joined machines including USB access control, password policies, account lockout policies, and firewall rule enforcement.
 
 
-🏗️ Project Requirement
+ **Project Requirement**
 
 
 Windows Server (Domain Controller)
@@ -49,19 +47,18 @@ RODC - Server101 - Read-Only Domain Controller	10.0.0.101/8
 Client PC - PC1 - 10.0.0.160/8
 
 
-🔐 Implemented Security Policies
+**Implemented Security Policies**
+
+**1. USB Storage Blocking Policy**
 
 
-1️⃣ USB Storage Blocking Policy
-
-
-🎯 Objective
+**Objective**
 
 
 Prevent unauthorized USB storage devices from being used on domain-joined systems.
 
 
-⚙️ Configuration
+**Configuration**
 
 
 ![USB](screenshots/USB/USB_ACCESSIBLE.png)
@@ -89,17 +86,15 @@ Prevent unauthorized USB storage devices from being used on domain-joined system
 
 
 
-2️⃣ Password Policy Enforcement
+**2️. Password Policy Enforcement**
 
-
-🎯 Objective
+**Objective**
 
 
 Enforce strong password standards across all domain users.
 
 
-⚙️ Configuration Path
-
+**Configuration Path**
 
 ![PASSWORD](screenshots/PASSWORD/PASSWORD_CRITERIA.png)
 
@@ -107,16 +102,16 @@ Enforce strong password standards across all domain users.
 ![PASSWORD](screenshots/PASSWORD/NET_ACCOUNTS.png)
 
 
-3️⃣ Account Lockout Policy
+**3️. Account Lockout Policy**
 
 
-🎯 Objective
+**Objective**
 
 
 Protect against brute-force password attacks.
 
 
-⚙️ Configuration:
+**Configuration:**
 
 
 ![LOCKOUT](screenshots/LOCKOUT/ACCOUNT_LOCKOUT_CRITERIA.png)
@@ -131,16 +126,16 @@ Protect against brute-force password attacks.
 ![LOCKOUT](screenshots/LOCKOUT/UNLOCKED_ACCOUNT.png)
 
 
-4️⃣ Firewall ICMP (Ping) Blocking
+**4️. Firewall ICMP (Ping) Blocking**
 
 
-🎯 Objective
+**Objective**
 
 
 Block ping requests to improve network security and reduce reconnaissance attacks.
 
 
-⚙️ Configuration:
+**Configuration:**
 
 
 ![FIREWALL](screenshots/FIREWALL/FIREWALL_GPO_ENABLED.png)
@@ -182,8 +177,7 @@ Block ping requests to improve network security and reduce reconnaissance attack
 ![FIREWALL](screenshots/FIREWALL/FIREWALL_PING_RESTORED.png)
 
 
-📊 Testing & Validation
-
+**Testing & Validation**
 
 Each policy was tested using:
 
@@ -203,7 +197,7 @@ Login failure attempts
 USB device insertion tests
 
 
-🧠 Key Learnings
+**Key Learnings**
 
 
 Group Policy is a powerful centralized security tool in Active Directory
@@ -218,7 +212,7 @@ Overly restrictive policies can impact administrative tools if not properly conf
 Security hardening requires balancing usability and protection
 
 
-🚀 Skills Demonstrated
+**Skills Demonstrated**
 
 
 Active Directory Administration
@@ -239,7 +233,7 @@ Network Security (Firewall & ICMP control)
 PowerShell verification commands
 
 
-👨‍💻 Author
+**Author**
 
 
 Ravi Kumar
